@@ -30,5 +30,14 @@
          "DB_PORT": "3307",
          "DB_DATABASE": "ecommerceapp_themnotice",
          "DB_USERNAME": "ecommerceapp_themnotice"
-     }
+     },
+     "builds": [
+        {
+          "src": "index.php",
+          "use": "@vercel/php",
+          "config": {
+            "extensions": ["openssl"]
+          }
+        }
+      ]
  }
